@@ -69,6 +69,21 @@
     });
   });
 
+  /* ---- Speaker photo fallback (monogram if image missing) ---- */
+  function fixPhoto(img) {
+    var ini = img.getAttribute("data-initials") || "";
+    img.parentNode.innerHTML =
+      '<svg viewBox="0 0 100 100"><rect width="100" height="100" fill="#143a63"/>' +
+      '<circle cx="50" cy="40" r="18" fill="#cfe0f1"/>' +
+      '<path d="M20 92c0-17 13-28 30-28s30 11 30 28z" fill="#cfe0f1"/>' +
+      '<text x="50" y="55" text-anchor="middle" font-family="Lora,serif" font-size="20" fill="#0a2540" font-weight="700">' +
+      ini + "</text></svg>";
+  }
+  document.querySelectorAll("img.ppic").forEach(function (img) {
+    if (img.complete && img.naturalWidth === 0) fixPhoto(img);
+    else img.addEventListener("error", function () { fixPhoto(img); });
+  });
+
   /* ---- Footer year ---- */
   var y = document.getElementById("yr");
   if (y) y.textContent = new Date().getFullYear();

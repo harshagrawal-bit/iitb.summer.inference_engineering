@@ -251,8 +251,9 @@ ul { margin: 0 0 1rem; }
 /* ---------- Speakers ---------- */
 .speaker { background:#fff; border:1px solid var(--line); border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-sm); transition:.2s; }
 .speaker:hover { box-shadow:var(--shadow); transform:translateY(-3px); }
-.speaker__photo { aspect-ratio: 1/1; background:linear-gradient(135deg,var(--navy-700),var(--steel)); display:grid; place-items:center; }
+.speaker__photo { aspect-ratio: 1/1; background:linear-gradient(135deg,var(--navy-700),var(--steel)); display:grid; place-items:center; overflow:hidden; }
 .speaker__photo svg { width:100%; height:100%; }
+.speaker__photo img.ppic { width:100%; height:100%; object-fit:cover; display:block; }
 .speaker__body { padding:20px 22px 24px; }
 .speaker__body h3 { font-size:1.12rem; margin:0 0 .15rem; }
 .speaker__role { color:var(--saffron-dk); font-weight:600; font-size:.9rem; }
