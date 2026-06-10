@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="circuit pattern">
+  <g fill="none" stroke="#7fb0e0" stroke-width="2">
+    <path d="M40 60 H140 V140 H240"/>
+    <path d="M300 40 V120 H360"/>
+    <path d="M60 200 H160 V300 H300 V360"/>
+    <path d="M340 200 H260 V260"/>
+    <path d="M40 340 H120 V260"/>
+  </g>
+  <g fill="#e0651a">
+    <circle cx="140" cy="60" r="6"/><circle cx="240" cy="140" r="6"/><circle cx="300" cy="120" r="6"/>
+    <circle cx="160" cy="300" r="6"/><circle cx="300" cy="360" r="6"/><circle cx="260" cy="260" r="6"/>
+    <circle cx="120" cy="260" r="6"/>
+  </g>
+  <g fill="#7fb0e0">
+    <circle cx="40" cy="60" r="5"/><circle cx="360" cy="120" r="5"/><circle cx="340" cy="200" r="5"/><circle cx="40" cy="340" r="5"/>
+  </g>
+</svg>

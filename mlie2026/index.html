@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MLIE 2026 · Summer School on Machine Learning Inference Engineering — IIT Bombay</title>
+<meta name="description" content="A 3-day intensive summer school (22–24 June 2026) at IIT Bombay on Machine Learning Inference Engineering — model serving, quantization, GPU optimization and LLM deployment. Open to students and faculty across IITs and partner institutions." />
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ===== Top bar ===== -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar__left">
+      <span>Centre for Machine Intelligence &amp; Data Science (C-MInDS)</span>
+      <span>·</span>
+      <span>Department of Computer Science &amp; Engineering</span>
+    </div>
+    <div class="topbar__links">
+      <a href="mailto:mlie2026@cse.iitb.ac.in">mlie2026@cse.iitb.ac.in</a>
+      <a href="https://www.iitb.ac.in" target="_blank" rel="noopener">IITB Home ↗</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <div class="container">
+    <nav class="nav">
+      <a class="brand" href="index.html" aria-label="MLIE 2026 home">
+        <img src="assets/logo.svg" alt="MLIE 2026 emblem" />
+        <span class="brand__text">
+          <strong>MLIE&nbsp;2026</strong>
+          <span>Summer School · IIT Bombay</span>
+        </span>
+      </a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="speakers.html">Speakers</a></li>
+        <li><a href="registration.html">Registration</a></li>
+        <li><a href="venue.html">Venue</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="nav__cta"><a class="btn btn--primary" href="registration.html">Register</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="hero__bg"><object data="assets/hero.svg" type="image/svg+xml" aria-hidden="true" style="pointer-events:none;width:100%;height:100%"></object></div>
+  <div class="hero__overlay"></div>
+  <div class="container">
+    <div class="hero__inner">
+      <span class="hero__badge">● Registrations open · Limited to 90 participants</span>
+      <h1>Summer School on Machine&nbsp;Learning Inference Engineering</h1>
+      <p class="hero__sub">A three-day, hands-on programme on taking machine-learning models from notebook to production — efficient serving, quantization, GPU kernel optimization and large-language-model deployment at scale.</p>
+
+      <div class="hero__meta">
+        <div class="m">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          <div><b>22–24 June 2026</b><span>Mon – Wed · 3 days</span></div>
+        </div>
+        <div class="m">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <div><b>IIT Bombay, Powai</b><span>Victor Menezes Convention Centre</span></div>
+        </div>
+        <div class="m">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          <div><b>₹8,000 fee</b><span>Accommodation included</span></div>
+        </div>
+        <div class="m">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1 3 3 6 3s6-2 6-3v-5"/></svg>
+          <div><b>Open to all IITs</b><span>&amp; partner institutions</span></div>
+        </div>
+      </div>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary btn--lg" href="registration.html">Register Now</a>
+        <a class="btn btn--ghost btn--lg" href="brochure.html" target="_blank" rel="noopener">Download Brochure ↓</a>
+      </div>
+
+      <div class="countdown" id="countdown" aria-label="Time remaining until the summer school begins">
+        <div class="unit"><b data-cd="d">–</b><span>Days</span></div>
+        <div class="unit"><b data-cd="h">–</b><span>Hours</span></div>
+        <div class="unit"><b data-cd="m">–</b><span>Minutes</span></div>
+        <div class="unit"><b data-cd="s">–</b><span>Seconds</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Strip ===== -->
+<div class="strip">
+  <div class="container">
+    <span>Organised under the Continuing Education Programme (CEP)</span>
+    <div class="strip__tags">
+      <span>C-MInDS</span><span>CSE</span><span>CMInDS GPU Cluster</span><span>National Supercomputing Mission</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Intro / highlights ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Why this programme</span>
+      <h2>Bridging the gap between training a model and shipping it</h2>
+      <p>Most courses stop at model accuracy. MLIE 2026 begins where they end — the engineering discipline of running models reliably, cheaply and fast in production.</p>
+    </div>
+
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 17l6-6-6-6M12 19h8"/></svg></div>
+        <h3>Production-grade serving</h3>
+        <p>Build low-latency inference services with batching, KV-caching and autoscaling using Triton, vLLM and Ray Serve.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l3-4 3 3 4-6"/></svg></div>
+        <h3>Make models 10× cheaper</h3>
+        <p>Quantization (INT8/INT4), pruning, distillation and speculative decoding to slash cost and memory without losing accuracy.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></svg></div>
+        <h3>Down to the GPU</h3>
+        <p>Understand memory hierarchies, CUDA streams and kernel fusion — and profile a real workload on the C-MInDS A100 cluster.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+        <h3>LLMs in the real world</h3>
+        <p>Deploy and optimise large language models — paged attention, tensor/pipeline parallelism, and cost-aware routing.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Reliability &amp; MLOps</h3>
+        <p>Monitoring, canary rollouts, drift detection and the observability stack that keeps inference healthy at 3 a.m.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13A4 4 0 0 1 16 11"/></svg></div>
+        <h3>Learn from practitioners</h3>
+        <p>Faculty from IIT Bombay alongside engineers who run inference at production scale in industry.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Stats ===== -->
+<section class="section--tight section--alt">
+  <div class="container">
+    <div class="stats">
+      <div class="stat"><b>3</b><span>Days · 22–24 June 2026</span></div>
+      <div class="stat"><b>18+</b><span>Lectures &amp; hands-on labs</span></div>
+      <div class="stat"><b>90</b><span>Seats across all IITs</span></div>
+      <div class="stat"><b>A100</b><span>GPU lab access included</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== About split ===== -->
+<section class="section">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="eyebrow">About the summer school</span>
+        <h2>An intensive, lab-driven introduction to inference engineering</h2>
+        <p class="lead">Modern AI is bottlenecked not by training, but by the cost and latency of serving models to millions of users. MLIE 2026 is designed for students and early-career engineers who want to master that craft.</p>
+        <p>Over three days you will move from first principles — what actually happens when a model runs a forward pass — to deploying an optimised large-language-model endpoint of your own. Mornings are lecture-led; afternoons are spent in supervised hands-on labs on the C-MInDS GPU cluster. The school concludes with a mini-capstone where teams optimise a given model and compete on a shared latency–throughput–cost leaderboard.</p>
+        <ul class="checklist">
+          <li>Designed and delivered by IIT Bombay faculty and invited industry engineers</li>
+          <li>Every participant receives individual access to A100 GPU lab instances</li>
+          <li>Certificate of completion issued under the Continuing Education Programme</li>
+          <li>No prior systems background assumed — only comfort with Python and basic ML</li>
+        </ul>
+        <a class="btn btn--navy mt-2" href="about.html">Read the full course outline →</a>
+      </div>
+      <div class="split__media">
+        <object data="assets/hero.svg" type="image/svg+xml" aria-label="IIT Bombay campus" style="border-radius:16px;box-shadow:var(--shadow);width:100%"></object>
+        <div class="tag">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#e0651a" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1 3 3 6 3s6-2 6-3v-5"/></svg>
+          <div><b>Certificate</b><br><span style="font-size:.82rem;color:var(--muted)">CEP, IIT Bombay</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Who should attend ===== -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="split">
+      <div class="split__media" style="order:2">
+        <img src="assets/circuit.svg" alt="" style="background:var(--navy);border-radius:16px;padding:40px;box-shadow:var(--shadow)" />
+      </div>
+      <div style="order:1">
+        <span class="eyebrow">Who should attend</span>
+        <h2>Built for the next generation of ML systems engineers</h2>
+        <p>The programme is open to participants from <strong>all IITs, IISc, IIITs, NITs and recognised partner institutions</strong>. It is ideal for:</p>
+        <div class="pills mt-2">
+          <span class="pill">B.Tech / M.Tech students (pre-final &amp; final year)</span>
+          <span class="pill">PhD scholars in ML / Systems</span>
+          <span class="pill">Research staff &amp; project associates</span>
+          <span class="pill">Early-career ML engineers</span>
+          <span class="pill">Faculty wanting hands-on exposure</span>
+        </div>
+        <div class="callout info mt-3">
+          <p><strong>Prerequisites:</strong> working knowledge of Python and a first course in machine learning. Familiarity with PyTorch and the Linux command line is helpful but not required — a primer is shared before the school.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Topics preview ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Curriculum at a glance</span>
+      <h2>What you will learn</h2>
+      <p>Six themed modules spread across three days, each pairing a lecture with a supervised lab.</p>
+    </div>
+    <div class="grid grid-2">
+      <div class="topic"><span class="num">01</span><div><h3>Foundations of Inference</h3><p>The forward pass, latency vs. throughput, roofline analysis, and where time and money actually go.</p></div></div>
+      <div class="topic"><span class="num">02</span><div><h3>Model Compression</h3><p>Post-training and quantization-aware INT8/INT4, pruning, knowledge distillation and low-rank methods.</p></div></div>
+      <div class="topic"><span class="num">03</span><div><h3>GPU &amp; Kernel Optimization</h3><p>CUDA execution model, memory coalescing, operator fusion, FlashAttention and Triton kernels.</p></div></div>
+      <div class="topic"><span class="num">04</span><div><h3>Serving Systems</h3><p>Dynamic batching, KV-cache management, Triton Inference Server, vLLM and Ray Serve in practice.</p></div></div>
+      <div class="topic"><span class="num">05</span><div><h3>LLM Deployment at Scale</h3><p>Paged attention, tensor &amp; pipeline parallelism, speculative decoding and cost-aware routing.</p></div></div>
+      <div class="topic"><span class="num">06</span><div><h3>Production &amp; MLOps</h3><p>Observability, autoscaling, canary releases, drift monitoring and on-call reliability for ML.</p></div></div>
+    </div>
+    <div class="text-center mt-3">
+      <a class="btn btn--outline" href="schedule.html">See the full 3-day schedule →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Speakers teaser ===== -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Faculty &amp; invited speakers</span>
+      <h2>Learn from those who build and study these systems</h2>
+      <p>A blend of IIT Bombay faculty in machine learning and systems, with invited engineers from industry.</p>
+    </div>
+    <div class="grid grid-4">
+      <div class="speaker">
+        <div class="speaker__photo">
+          <svg viewBox="0 0 100 100"><defs><linearGradient id="a1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1d4e82"/><stop offset="1" stop-color="#0a2540"/></linearGradient></defs><rect width="100" height="100" fill="url(#a1)"/><circle cx="50" cy="40" r="18" fill="#cfe0f1"/><path d="M20 92c0-17 13-28 30-28s30 11 30 28z" fill="#cfe0f1"/><text x="50" y="54" text-anchor="middle" font-family="Lora,serif" font-size="20" fill="#0a2540" font-weight="700">SS</text></svg>
+        </div>
+        <div class="speaker__body">
+          <h3>Prof. Sunita Sarawagi</h3>
+          <div class="speaker__role">Convener</div>
+          <div class="speaker__aff">CSE &amp; C-MInDS, IIT Bombay</div>
+        </div>
+      </div>
+      <div class="speaker">
+        <div class="speaker__photo">
+          <svg viewBox="0 0 100 100"><rect width="100" height="100" fill="url(#a1)"/><circle cx="50" cy="40" r="18" fill="#cfe0f1"/><path d="M20 92c0-17 13-28 30-28s30 11 30 28z" fill="#cfe0f1"/><text x="50" y="54" text-anchor="middle" font-family="Lora,serif" font-size="20" fill="#0a2540" font-weight="700">PJ</text></svg>
+        </div>
+        <div class="speaker__body">
+          <h3>Prof. Preethi Jyothi</h3>
+          <div class="speaker__role">Co-Convener</div>
+          <div class="speaker__aff">CSE, IIT Bombay</div>
+        </div>
+      </div>
+      <div class="speaker">
+        <div class="speaker__photo">
+          <svg viewBox="0 0 100 100"><rect width="100" height="100" fill="url(#a1)"/><circle cx="50" cy="40" r="18" fill="#cfe0f1"/><path d="M20 92c0-17 13-28 30-28s30 11 30 28z" fill="#cfe0f1"/><text x="50" y="54" text-anchor="middle" font-family="Lora,serif" font-size="20" fill="#0a2540" font-weight="700">PK</text></svg>
+        </div>
+        <div class="speaker__body">
+          <h3>Prof. Purushottam Kulkarni</h3>
+          <div class="speaker__role">Systems track</div>
+          <div class="speaker__aff">CSE, IIT Bombay</div>
+        </div>
+      </div>
+      <div class="speaker">
+        <div class="speaker__photo">
+          <svg viewBox="0 0 100 100"><rect width="100" height="100" fill="url(#a1)"/><circle cx="50" cy="40" r="18" fill="#cfe0f1"/><path d="M20 92c0-17 13-28 30-28s30 11 30 28z" fill="#cfe0f1"/><text x="50" y="54" text-anchor="middle" font-family="Lora,serif" font-size="20" fill="#0a2540" font-weight="700">AD</text></svg>
+        </div>
+        <div class="speaker__body">
+          <h3>Prof. Abir De</h3>
+          <div class="speaker__role">ML track</div>
+          <div class="speaker__aff">CSE, IIT Bombay</div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-3"><a class="btn btn--outline" href="speakers.html">Meet all speakers →</a></div>
+  </div>
+</section>
+
+<!-- ===== Fees quick ===== -->
+<section class="section">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="eyebrow">Fees &amp; what's included</span>
+        <h2>One flat fee. No hidden costs.</h2>
+        <p>A single registration fee of <strong>₹8,000</strong> (inclusive of GST) covers the entire three-day programme, GPU lab access, course materials and on-campus accommodation.</p>
+        <ul class="checklist">
+          <li>All lectures, hands-on labs and the capstone</li>
+          <li>Individual A100 GPU lab credentials</li>
+          <li><strong>On-campus accommodation for 22–24 June (included)</strong></li>
+          <li>Course kit, certificate &amp; high-tea during sessions</li>
+        </ul>
+        <div class="callout mt-2">
+          <p><strong>Please note:</strong> meals (breakfast, lunch &amp; dinner) are <strong>not included</strong> in the fee. Subsidised dining is available at campus canteens and the hostel mess, and pay-as-you-go counters operate at the venue.</p>
+        </div>
+      </div>
+      <div>
+        <div class="price">
+          <div class="price__head">
+            <div class="amt">₹8,000<small> /participant</small></div>
+            <p>Inclusive of 18% GST · Same fee for all participants</p>
+          </div>
+          <div class="price__body">
+            <h4>Included</h4>
+            <ul class="checklist" style="margin-bottom:1.2rem">
+              <li>3-day programme &amp; capstone</li>
+              <li>A100 GPU lab access</li>
+              <li>On-campus accommodation (3 nights)</li>
+              <li>Course materials &amp; certificate</li>
+            </ul>
+            <h4>Not included</h4>
+            <p style="color:var(--slate);font-size:.95rem;margin:0 0 1.2rem">Meals · travel to Mumbai · personal expenses</p>
+            <a class="btn btn--primary btn--lg" href="registration.html" style="width:100%;justify-content:center">Register for ₹8,000</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA band ===== -->
+<section class="section section--tight">
+  <div class="container">
+    <div class="cta-band">
+      <h2>Seats are limited to 90 participants</h2>
+      <p>Registration closes on <strong>8 June 2026</strong> or when seats are filled, whichever is earlier. Selection is on a first-come, first-served basis with a short statement of interest.</p>
+      <div class="actions">
+        <a class="btn btn--primary btn--lg" href="registration.html">Apply Now</a>
+        <a class="btn btn--ghost btn--lg" href="contact.html">Talk to the organising team</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/logo.svg" alt="MLIE 2026" />
+          <div>
+            <strong>MLIE 2026</strong>
+            <span>Summer School on Machine Learning Inference Engineering</span>
+          </div>
+        </div>
+        <p style="max-width:34ch">Organised by C-MInDS &amp; the Department of Computer Science &amp; Engineering, IIT Bombay, under the Continuing Education Programme.</p>
+      </div>
+      <div>
+        <h4>Programme</h4>
+        <a href="about.html">About</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="speakers.html">Speakers</a>
+        <a href="brochure.html">Brochure</a>
+      </div>
+      <div>
+        <h4>Participate</h4>
+        <a href="registration.html">Registration</a>
+        <a href="registration.html#fees">Fees</a>
+        <a href="venue.html">Venue &amp; Travel</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Reach us</h4>
+        <a href="mailto:mlie2026@cse.iitb.ac.in">mlie2026@cse.iitb.ac.in</a>
+        <a href="tel:+912225767900">+91 22 2576 7900</a>
+        <span style="color:#9fb6cf;display:block;padding:.22rem 0">C-MInDS, 2nd Floor, KReSIT Building,<br>IIT Bombay, Powai, Mumbai 400076</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="yr">2026</span> Indian Institute of Technology Bombay · Continuing Education Programme</span>
+      <span><a href="#" style="display:inline">Privacy</a> · <a href="#" style="display:inline">Terms</a></span>
+    </div>
+  </div>
+  <div class="footer-disclaimer">
+    This website was created by students as an academic course project and is not an official IIT Bombay publication. Course details are illustrative.
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

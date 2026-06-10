@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Brochure · MLIE 2026 — Summer School on ML Inference Engineering, IIT Bombay</title>
+<meta name="description" content="Printable brochure for MLIE 2026 at IIT Bombay, 22–24 June 2026." />
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{--navy:#0a2540;--navy7:#123a63;--saffron:#e0651a;--gold:#c8941f;--ink:#1c2530;--slate:#4a5765;--muted:#6b7785;--line:#dde4ec;--sky:#eaf2fb;}
+  *{box-sizing:border-box}
+  body{margin:0;background:#e9edf2;font-family:"Source Sans 3",system-ui,Arial,sans-serif;color:var(--ink);line-height:1.5;}
+  h1,h2,h3,h4{font-family:"Lora",Georgia,serif;color:var(--navy);margin:0;}
+  a{color:var(--navy7);}
+  .toolbar{position:sticky;top:0;background:var(--navy);color:#fff;display:flex;justify-content:space-between;align-items:center;padding:12px 20px;z-index:5;}
+  .toolbar span{font-size:.9rem;color:#cfe0f1}
+  .toolbar a,.toolbar button{font-family:inherit;font-size:.92rem;font-weight:600;border:0;border-radius:7px;padding:.55rem 1.1rem;cursor:pointer;text-decoration:none;}
+  .btn-print{background:var(--saffron);color:#fff}
+  .btn-back{background:transparent;color:#cfe0f1;border:1px solid rgba(255,255,255,.4)}
+  .sheet{width:210mm;min-height:296mm;margin:20px auto;background:#fff;box-shadow:0 10px 40px rgba(10,37,64,.18);padding:0;overflow:hidden;}
+
+  /* Cover */
+  .cover{position:relative;color:#fff;background:var(--navy);min-height:296mm;display:flex;flex-direction:column;}
+  .cover__bg{position:absolute;inset:0;opacity:.5}
+  .cover__bg object,.cover__bg img{width:100%;height:100%;object-fit:cover}
+  .cover__inner{position:relative;z-index:2;padding:28mm 20mm;display:flex;flex-direction:column;height:100%;flex:1;background:linear-gradient(160deg,rgba(6,26,46,.86),rgba(10,37,64,.62));}
+  .cover__top{display:flex;align-items:center;gap:14px;}
+  .cover__top img{width:58px;height:58px}
+  .cover__top b{display:block;font-family:"Lora",serif;font-size:1.1rem}
+  .cover__top span{font-size:.82rem;color:#bcd0e6}
+  .cover__mid{margin-top:auto}
+  .cover .kicker{display:inline-block;border:1px solid rgba(224,101,26,.6);background:rgba(224,101,26,.16);color:#ffcfa8;padding:.35rem .9rem;border-radius:999px;font-size:.8rem;font-weight:600;letter-spacing:.04em;margin-bottom:1.2rem}
+  .cover h1{color:#fff;font-size:2.7rem;line-height:1.12;max-width:16ch;margin-bottom:1rem}
+  .cover .sub{font-size:1.15rem;color:#cfe0f1;max-width:54ch}
+  .cover__facts{display:grid;grid-template-columns:1fr 1fr;gap:14px 28px;margin-top:2.2rem;max-width:560px}
+  .cover__facts .f b{display:block;color:#fff;font-family:"Lora",serif;font-size:1.15rem}
+  .cover__facts .f span{font-size:.85rem;color:#a9c0d8}
+  .cover__org{margin-top:2.4rem;font-size:.86rem;color:#bcd0e6;border-top:1px solid rgba(255,255,255,.18);padding-top:1.2rem}
+
+  /* Content pages */
+  .page{padding:20mm}
+  .ph{display:flex;align-items:center;gap:12px;border-bottom:2px solid var(--saffron);padding-bottom:10px;margin-bottom:18px}
+  .ph img{width:34px;height:34px}
+  .ph b{font-family:"Lora",serif;font-size:1.5rem;color:var(--navy)}
+  .ph span{margin-left:auto;font-size:.8rem;color:var(--muted)}
+  h2.sec{font-size:1.25rem;margin:22px 0 8px;color:var(--navy)}
+  h2.sec:first-of-type{margin-top:0}
+  p{margin:0 0 .8rem;color:var(--slate);font-size:.96rem}
+  ul{margin:0 0 1rem;padding-left:1.1rem;color:var(--slate);font-size:.96rem}
+  li{margin:.2rem 0}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .box{border:1px solid var(--line);border-radius:10px;padding:16px 18px;background:#fafbfd}
+  .box h3{font-size:1rem;margin-bottom:.5rem}
+  table{width:100%;border-collapse:collapse;font-size:.9rem}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
+  th{background:var(--sky);color:var(--navy);font-family:"Source Sans 3",sans-serif}
+  .fee{background:var(--navy);color:#fff;border-radius:12px;padding:18px 20px;display:flex;justify-content:space-between;align-items:center}
+  .fee .amt{font-family:"Lora",serif;font-size:2rem}
+  .fee small{color:#a9c0d8;font-size:.85rem}
+  .pill{display:inline-block;background:var(--sky);color:var(--navy7);border:1px solid var(--line);border-radius:999px;padding:.25rem .7rem;font-size:.8rem;margin:.15rem .2rem 0}
+  .note{border-left:4px solid var(--saffron);background:#fdf6f0;padding:10px 14px;border-radius:0 8px 8px 0;font-size:.88rem;color:var(--ink)}
+  .schedrow{display:grid;grid-template-columns:90px 1fr;gap:10px;padding:7px 0;border-bottom:1px dashed var(--line);font-size:.9rem}
+  .schedrow b{color:var(--navy7)}
+  .daycol h3{font-size:1.02rem;color:var(--saffron);margin-bottom:6px}
+  .contact-foot{margin-top:24px;border-top:2px solid var(--saffron);padding-top:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.88rem;color:var(--slate)}
+  .disc{font-size:.72rem;color:var(--muted);text-align:center;margin-top:14px}
+
+  @media (max-width:800px){.sheet{width:100%;margin:0}.cover h1{font-size:2rem}.two{grid-template-columns:1fr}}
+  @media print{
+    @page{size:A4;margin:0}
+    body{background:#fff}
+    .toolbar{display:none}
+    .sheet{width:auto;min-height:auto;margin:0;box-shadow:none;page-break-after:always}
+    .cover{min-height:297mm}
+  }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <span>MLIE 2026 · Brochure — use your browser's “Save as PDF” to download</span>
+  <div>
+    <a class="btn-back" href="index.html">← Back to site</a>
+    <button class="btn-print" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+</div>
+
+<!-- ===== PAGE 1 — COVER ===== -->
+<div class="sheet">
+  <div class="cover">
+    <div class="cover__bg"><object data="assets/hero.svg" type="image/svg+xml" aria-hidden="true" style="pointer-events:none"></object></div>
+    <div class="cover__inner">
+      <div class="cover__top">
+        <img src="assets/logo.svg" alt="MLIE 2026" />
+        <div><b>Indian Institute of Technology Bombay</b><span>C-MInDS · Department of Computer Science &amp; Engineering</span></div>
+      </div>
+      <div class="cover__mid">
+        <span class="kicker">SUMMER SCHOOL · CONTINUING EDUCATION PROGRAMME</span>
+        <h1>Machine Learning Inference Engineering</h1>
+        <p class="sub">A three-day, hands-on programme on taking ML models from notebook to production — efficient serving, quantization, GPU optimization and large-language-model deployment.</p>
+        <div class="cover__facts">
+          <div class="f"><b>22–24 June 2026</b><span>Monday – Wednesday · 3 days</span></div>
+          <div class="f"><b>IIT Bombay, Powai</b><span>Victor Menezes Convention Centre</span></div>
+          <div class="f"><b>₹8,000 (incl. GST)</b><span>Accommodation included · meals excluded</span></div>
+          <div class="f"><b>90 seats</b><span>Open to all IITs &amp; partner institutions</span></div>
+        </div>
+        <div class="cover__org">
+          Organised by the Centre for Machine Intelligence &amp; Data Science (C-MInDS) and the Department of Computer Science &amp; Engineering, IIT Bombay.<br>
+          Register: mlie2026.cse.iitb.ac.in · mlie2026@cse.iitb.ac.in
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PAGE 2 — ABOUT & CURRICULUM ===== -->
+<div class="sheet">
+  <div class="page">
+    <div class="ph"><img src="assets/logo.svg" alt="" /><b>About the Programme</b><span>MLIE 2026</span></div>
+
+    <h2 class="sec">Overview</h2>
+    <p>Modern AI is bottlenecked not by training, but by the cost and latency of serving models at scale. MLIE 2026 is a three-day, lab-driven summer school that introduces the engineering discipline of inference — from first principles to deploying an optimised large-language-model endpoint of your own. Mornings are lecture-led; afternoons are supervised labs on the C-MInDS A100 GPU cluster; the school closes with a competitive optimisation capstone.</p>
+
+    <h2 class="sec">Who should attend</h2>
+    <p>Open to students, scholars, research staff and faculty from all IITs, IISc, IIITs, NITs and recognised partner institutions, plus early-career engineers.</p>
+    <div>
+      <span class="pill">B.Tech / M.Tech</span><span class="pill">PhD scholars</span><span class="pill">Research staff</span><span class="pill">Faculty</span><span class="pill">Early-career engineers</span>
+    </div>
+    <p style="margin-top:.9rem"><strong>Prerequisites:</strong> working knowledge of Python and a first course in machine learning. PyTorch and Linux familiarity helpful but not required.</p>
+
+    <h2 class="sec">Curriculum — six modules</h2>
+    <div class="two">
+      <div class="box"><h3>01 · Foundations of Inference</h3><p style="margin:0">Forward pass, latency vs. throughput, roofline analysis.</p></div>
+      <div class="box"><h3>02 · Model Compression</h3><p style="margin:0">INT8/INT4 quantization, pruning, distillation.</p></div>
+      <div class="box"><h3>03 · GPU &amp; Kernel Optimization</h3><p style="margin:0">CUDA, memory coalescing, fusion, FlashAttention, Triton.</p></div>
+      <div class="box"><h3>04 · Serving Systems</h3><p style="margin:0">Dynamic batching, KV-cache, Triton, vLLM, Ray Serve.</p></div>
+      <div class="box"><h3>05 · LLM Deployment at Scale</h3><p style="margin:0">Paged attention, parallelism, speculative decoding.</p></div>
+      <div class="box"><h3>06 · Production &amp; MLOps</h3><p style="margin:0">Observability, autoscaling, canary, drift detection.</p></div>
+    </div>
+
+    <h2 class="sec">Learning outcomes</h2>
+    <ul>
+      <li>Reason about performance and decide where optimisation pays off</li>
+      <li>Compress models and measure the size–speed–accuracy trade-off</li>
+      <li>Build a batched, KV-cached serving stack and deploy an LLM endpoint</li>
+      <li>Profile real GPU workloads and operate a service reliably</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===== PAGE 3 — SCHEDULE & FEES ===== -->
+<div class="sheet">
+  <div class="page">
+    <div class="ph"><img src="assets/logo.svg" alt="" /><b>Schedule &amp; Registration</b><span>22–24 June 2026</span></div>
+
+    <h2 class="sec">Three-day schedule (indicative)</h2>
+    <div class="two">
+      <div class="daycol">
+        <h3>Day 1 · Foundations</h3>
+        <div class="schedrow"><b>09:00</b><span>Inaugural &amp; course overview</span></div>
+        <div class="schedrow"><b>09:30</b><span>Foundations of model inference</span></div>
+        <div class="schedrow"><b>11:20</b><span>Performance modelling &amp; roofline</span></div>
+        <div class="schedrow"><b>14:00</b><span>Lab 1 — profiling end to end</span></div>
+      </div>
+      <div class="daycol">
+        <h3>Day 2 · Optimization</h3>
+        <div class="schedrow"><b>09:00</b><span>Quantization &amp; compression</span></div>
+        <div class="schedrow"><b>11:20</b><span>GPU &amp; kernel optimization</span></div>
+        <div class="schedrow"><b>14:00</b><span>Lab 2 — quantize &amp; accelerate</span></div>
+        <div class="schedrow"><b>17:30</b><span>Fireside chat: inference at scale</span></div>
+      </div>
+    </div>
+    <div class="daycol" style="margin-top:14px">
+      <h3>Day 3 · LLMs &amp; Capstone</h3>
+      <div class="two">
+        <div>
+          <div class="schedrow"><b>09:00</b><span>Serving systems &amp; dynamic batching</span></div>
+          <div class="schedrow"><b>10:30</b><span>Deploying LLMs at scale</span></div>
+          <div class="schedrow"><b>11:20</b><span>Production, MLOps &amp; reliability</span></div>
+        </div>
+        <div>
+          <div class="schedrow"><b>14:00</b><span>Capstone — inference leaderboard</span></div>
+          <div class="schedrow"><b>16:30</b><span>Presentations &amp; judging</span></div>
+          <div class="schedrow"><b>17:15</b><span>Valedictory &amp; certificates</span></div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="sec">Fee</h2>
+    <div class="fee">
+      <div><div class="amt">₹8,000</div><small>per participant · inclusive of 18% GST</small></div>
+      <div style="text-align:right;font-size:.85rem;color:#cfe0f1">Same fee for students,<br>scholars &amp; faculty</div>
+    </div>
+    <div class="two" style="margin-top:14px">
+      <div class="box"><h3 style="color:#1c7d5a">Included</h3><ul style="margin:0"><li>All lectures, labs &amp; capstone</li><li>Individual A100 GPU lab access</li><li>On-campus accommodation (3 nights)</li><li>Course kit &amp; certificate (CEP)</li></ul></div>
+      <div class="box"><h3 style="color:#b94f10">Not included</h3><ul style="margin:0"><li>Meals (breakfast / lunch / dinner)</li><li>Travel to &amp; from Mumbai</li><li>Local transport &amp; incidentals</li></ul></div>
+    </div>
+
+    <h2 class="sec">Key dates</h2>
+    <table>
+      <tr><th>Registration deadline</th><td>8 June 2026 (or until seats fill)</td></tr>
+      <tr><th>Confirmation &amp; primer</th><td>12 June 2026</td></tr>
+      <tr><th>Accommodation check-in</th><td>From 16:00, 21 June 2026</td></tr>
+      <tr><th>Summer school</th><td>22–24 June 2026</td></tr>
+    </table>
+
+    <div class="note" style="margin-top:14px">Seats are limited to 90 and selection is first-come, first-served with a short statement of interest. Apply early.</div>
+
+    <div class="contact-foot">
+      <div><strong>Register / enquire:</strong><br>mlie2026@cse.iitb.ac.in · +91 22 2576 7900</div>
+      <div style="text-align:right"><strong>Venue:</strong><br>VMCC, IIT Bombay, Powai, Mumbai 400076</div>
+    </div>
+    <p class="disc">This brochure was created by students as an academic course project and is not an official IIT Bombay publication. Details are illustrative.</p>
+  </div>
+</div>
+
+</body>
+</html>

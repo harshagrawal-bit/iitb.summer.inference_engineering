@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" role="img" aria-label="IIT Bombay campus skyline">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c2c4d"/>
+      <stop offset="0.55" stop-color="#0a2540"/>
+      <stop offset="1" stop-color="#061a2e"/>
+    </linearGradient>
+    <linearGradient id="bld" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#123a63"/>
+      <stop offset="1" stop-color="#0a2540"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="78%" cy="22%" r="40%">
+      <stop offset="0" stop-color="#1d4e82" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#1d4e82" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1440" height="760" fill="url(#sky)"/>
+  <rect width="1440" height="760" fill="url(#glow)"/>
+
+  <!-- faint grid / circuit lines -->
+  <g stroke="#2f6db0" stroke-width="1" opacity=".10">
+    <path d="M0 180 H1440 M0 360 H1440 M0 540 H1440"/>
+    <path d="M240 0 V760 M480 0 V760 M720 0 V760 M960 0 V760 M1200 0 V760"/>
+  </g>
+
+  <!-- neural arcs top-right -->
+  <g opacity=".5">
+    <g stroke="#3f7fc0" stroke-width="1.4" fill="none" opacity=".55">
+      <path d="M1040 120 L1150 80 L1260 150 L1340 90"/>
+      <path d="M1040 120 L1150 200 L1260 150"/>
+      <path d="M1150 80 L1150 200 M1260 150 L1340 90"/>
+    </g>
+    <g fill="#e0651a">
+      <circle cx="1040" cy="120" r="5"/><circle cx="1260" cy="150" r="5"/>
+    </g>
+    <g fill="#7fb0e0">
+      <circle cx="1150" cy="80" r="5"/><circle cx="1150" cy="200" r="5"/><circle cx="1340" cy="90" r="5"/>
+    </g>
+  </g>
+
+  <!-- distant hills (Powai) -->
+  <path d="M0 560 Q360 500 720 552 T1440 540 V760 H0 Z" fill="#0b2742" opacity=".7"/>
+
+  <!-- campus skyline -->
+  <g fill="url(#bld)">
+    <!-- main building tower -->
+    <rect x="620" y="300" width="200" height="300"/>
+    <rect x="660" y="250" width="120" height="60"/>
+    <polygon points="640,300 800,300 720,255"/>
+    <!-- side wings -->
+    <rect x="430" y="400" width="190" height="200"/>
+    <rect x="820" y="380" width="180" height="220"/>
+    <rect x="250" y="460" width="180" height="140"/>
+    <rect x="1000" y="440" width="170" height="160"/>
+    <rect x="1150" y="490" width="170" height="110"/>
+    <rect x="90" y="500" width="160" height="100"/>
+  </g>
+
+  <!-- windows -->
+  <g fill="#9ec3ea" opacity=".35">
+    <g>
+      <rect x="640" y="330" width="14" height="20"/><rect x="668" y="330" width="14" height="20"/><rect x="696" y="330" width="14" height="20"/><rect x="724" y="330" width="14" height="20"/><rect x="752" y="330" width="14" height="20"/><rect x="780" y="330" width="14" height="20"/>
+      <rect x="640" y="370" width="14" height="20"/><rect x="668" y="370" width="14" height="20"/><rect x="696" y="370" width="14" height="20"/><rect x="724" y="370" width="14" height="20"/><rect x="752" y="370" width="14" height="20"/><rect x="780" y="370" width="14" height="20"/>
+      <rect x="640" y="410" width="14" height="20"/><rect x="668" y="410" width="14" height="20"/><rect x="696" y="410" width="14" height="20"/><rect x="724" y="410" width="14" height="20"/><rect x="752" y="410" width="14" height="20"/><rect x="780" y="410" width="14" height="20"/>
+      <rect x="640" y="450" width="14" height="20"/><rect x="668" y="450" width="14" height="20"/><rect x="696" y="450" width="14" height="20"/><rect x="724" y="450" width="14" height="20"/><rect x="752" y="450" width="14" height="20"/><rect x="780" y="450" width="14" height="20"/>
+    </g>
+    <g fill="#e0651a" opacity=".5">
+      <rect x="696" y="490" width="14" height="20"/><rect x="724" y="490" width="14" height="20"/>
+    </g>
+  </g>
+  <!-- side wing windows -->
+  <g fill="#9ec3ea" opacity=".22">
+    <rect x="455" y="430" width="12" height="16"/><rect x="485" y="430" width="12" height="16"/><rect x="515" y="430" width="12" height="16"/><rect x="545" y="430" width="12" height="16"/><rect x="575" y="430" width="12" height="16"/>
+    <rect x="455" y="470" width="12" height="16"/><rect x="485" y="470" width="12" height="16"/><rect x="515" y="470" width="12" height="16"/><rect x="545" y="470" width="12" height="16"/><rect x="575" y="470" width="12" height="16"/>
+    <rect x="845" y="410" width="12" height="16"/><rect x="875" y="410" width="12" height="16"/><rect x="905" y="410" width="12" height="16"/><rect x="935" y="410" width="12" height="16"/><rect x="965" y="410" width="12" height="16"/>
+    <rect x="845" y="450" width="12" height="16"/><rect x="875" y="450" width="12" height="16"/><rect x="905" y="450" width="12" height="16"/><rect x="935" y="450" width="12" height="16"/><rect x="965" y="450" width="12" height="16"/>
+  </g>
+
+  <!-- foreground lake reflection -->
+  <rect x="0" y="600" width="1440" height="160" fill="#08203a"/>
+  <g opacity=".18" fill="#2f6db0">
+    <rect x="620" y="600" width="200" height="120"/>
+  </g>
+</svg>
