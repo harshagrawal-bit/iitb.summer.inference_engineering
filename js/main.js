@@ -30,10 +30,10 @@
     });
   }
 
-  /* ---- Countdown to 22 June 2026, 09:00 IST ---- */
+  /* ---- Countdown to 21 June 2026, 09:00 IST ---- */
   var cd = document.getElementById("countdown");
   if (cd) {
-    var target = new Date("2026-06-22T09:00:00+05:30").getTime();
+    var target = new Date("2026-06-21T09:00:00+05:30").getTime();
     var fields = {
       d: cd.querySelector('[data-cd="d"]'),
       h: cd.querySelector('[data-cd="h"]'),

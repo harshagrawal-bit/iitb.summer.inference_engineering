@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Schedule · MLIE 2026 — IIT Bombay</title>
-<meta name="description" content="Day-by-day schedule for the MLIE 2026 summer school, 22–24 June 2026 at IIT Bombay." />
+<title>Schedule · MLIE 2026 — International Workshop, IIT Bombay</title>
+<meta name="description" content="Day-by-day six-day schedule for MLIE 2026, 21–26 June 2026 at IIT Bombay, with international faculty from Tokyo and the US." />
 <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,7 +23,7 @@
 <header class="site-header">
   <div class="container">
     <nav class="nav">
-      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="MLIE 2026 emblem" /><span class="brand__text"><strong>MLIE&nbsp;2026</strong><span>Summer School · IIT Bombay</span></span></a>
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="MLIE 2026 emblem" /><span class="brand__text"><strong>MLIE&nbsp;2026</strong><span>Int'l Workshop · IIT Bombay</span></span></a>
       <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span></span></button>
       <ul class="nav__menu" id="nav-menu">
         <li><a href="index.html">Home</a></li>
@@ -42,8 +42,8 @@
 <section class="page-hero">
   <div class="container">
     <div class="crumb"><a href="index.html">Home</a> / Schedule</div>
-    <h1>Programme Schedule</h1>
-    <p>Three days, six modules. Mornings are lecture-led; afternoons are hands-on labs on the C-MInDS GPU cluster. All times are IST.</p>
+    <h1>Six-Day Programme Schedule</h1>
+    <p>21–26 June 2026. Mornings are lecture-led by the international faculty; afternoons are hands-on labs on the C-MInDS GPU cluster. All times are IST.</p>
   </div>
 </section>
 
@@ -54,35 +54,37 @@
     </div>
 
     <div class="daytabs" role="tablist">
-      <button class="daytab active" data-day="1" role="tab">Day 1<small>Mon · 22 June · Foundations</small></button>
-      <button class="daytab" data-day="2" role="tab">Day 2<small>Tue · 23 June · Optimization</small></button>
-      <button class="daytab" data-day="3" role="tab">Day 3<small>Wed · 24 June · LLMs &amp; Capstone</small></button>
+      <button class="daytab active" data-day="1" role="tab">Day 1<small>Sun · 21 Jun · Foundations</small></button>
+      <button class="daytab" data-day="2" role="tab">Day 2<small>Mon · 22 Jun · Compression</small></button>
+      <button class="daytab" data-day="3" role="tab">Day 3<small>Tue · 23 Jun · GPU &amp; Kernels</small></button>
+      <button class="daytab" data-day="4" role="tab">Day 4<small>Wed · 24 Jun · Serving</small></button>
+      <button class="daytab" data-day="5" role="tab">Day 5<small>Thu · 25 Jun · LLMs</small></button>
+      <button class="daytab" data-day="6" role="tab">Day 6<small>Fri · 26 Jun · Capstone</small></button>
     </div>
 
     <!-- DAY 1 -->
     <div class="daypanel active" id="day-1">
       <div class="timeline">
-        <div class="slot"><div class="time">08:30 – 09:00</div><h4>Registration &amp; welcome high-tea</h4><p>Collect your kit and lab credentials at the VMCC foyer.</p></div>
-        <div class="slot"><div class="time">09:00 – 09:30</div><h4>Inaugural &amp; course overview <span class="tagchip key">Keynote</span></h4><p class="who">Prof. Sunita Sarawagi · Convener, MLIE 2026</p><p>Why inference engineering matters, and how the three days are structured.</p></div>
-        <div class="slot"><div class="time">09:30 – 11:00</div><h4>Foundations of model inference</h4><p class="who">Prof. Preethi Jyothi</p><p>The forward pass in detail; latency vs. throughput; tail latency; the cost equation for serving.</p></div>
+        <div class="slot"><div class="time">08:30 – 09:15</div><h4>Registration &amp; welcome high-tea</h4><p>Collect your kit and lab credentials at the VMCC foyer.</p></div>
+        <div class="slot"><div class="time">09:15 – 10:00</div><h4>Inauguration &amp; the India edition <span class="tagchip key">Keynote</span></h4><p class="who">Prof. Sunita Sarawagi · Convener (IIT Bombay) · with the international faculty</p><p>Why inference engineering matters, why it has come to India, and how the six days are structured.</p></div>
+        <div class="slot"><div class="time">10:00 – 11:00</div><h4>Foundations of model inference</h4><p class="who">Prof. Sunita Sarawagi · IIT Bombay</p><p>The forward pass in detail; latency vs. throughput; tail latency; the cost equation for serving.</p></div>
         <div class="slot break"><div class="time">11:00 – 11:20</div><h4>Tea break</h4></div>
-        <div class="slot"><div class="time">11:20 – 13:00</div><h4>Performance modelling &amp; the roofline</h4><p class="who">Prof. Purushottam Kulkarni</p><p>Compute- vs. memory-bound regimes, arithmetic intensity, and reading a roofline plot for a real model.</p></div>
+        <div class="slot"><div class="time">11:20 – 13:00</div><h4>Performance modelling &amp; the roofline</h4><p class="who">Prof. Rio Yokota · Institute of Science Tokyo</p><p>Compute- vs. memory-bound regimes, arithmetic intensity, and reading a roofline plot for a real model.</p></div>
         <div class="slot break"><div class="time">13:00 – 14:00</div><h4>Lunch break <span class="tagchip">own arrangement</span></h4><p>Campus canteens, hostel mess and venue counters are open.</p></div>
-        <div class="slot"><div class="time">14:00 – 17:30</div><h4>Lab 1 — Profiling a model end to end <span class="tagchip lab">Hands-on</span></h4><p class="who">Lab leads &amp; teaching assistants</p><p>Set up your GPU instance, profile a ResNet and a small transformer with the PyTorch profiler and Nsight Systems, and identify the bottlenecks.</p></div>
-        <div class="slot break"><div class="time">18:00 – 19:00</div><h4>Optional evening clinic</h4><p>Open office-hours for environment setup and debugging.</p></div>
+        <div class="slot"><div class="time">14:00 – 17:30</div><h4>Lab 0 — environment &amp; first profile <span class="tagchip lab">Hands-on</span></h4><p class="who">Lab leads &amp; teaching assistants</p><p>Set up your GPU instance and profile a ResNet and a small transformer with the PyTorch profiler and Nsight Systems.</p></div>
+        <div class="slot break"><div class="time">18:00 – 19:00</div><h4>Welcome reception &amp; optional clinic</h4><p>Meet the faculty and cohort; open office-hours for setup.</p></div>
       </div>
     </div>
 
     <!-- DAY 2 -->
     <div class="daypanel" id="day-2">
       <div class="timeline">
-        <div class="slot"><div class="time">09:00 – 10:30</div><h4>Model compression: quantization</h4><p class="who">Prof. Abir De</p><p>Post-training vs. quantization-aware training; INT8 and INT4; calibration; accuracy–latency trade-offs.</p></div>
-        <div class="slot"><div class="time">10:30 – 11:00</div><h4>Pruning &amp; knowledge distillation</h4><p class="who">Invited speaker · Industry</p><p>Structured vs. unstructured pruning and distilling large models into deployable students.</p></div>
+        <div class="slot"><div class="time">09:00 – 10:30</div><h4>Quantization: PTQ &amp; QAT <span class="tagchip key">Intl. faculty</span></h4><p class="who">Prof. Song Han · MIT, USA</p><p>Post-training vs. quantization-aware training; INT8 and INT4; calibration; the accuracy–latency trade-off.</p></div>
+        <div class="slot"><div class="time">10:30 – 11:00</div><h4>Pruning &amp; sparsity</h4><p class="who">Prof. Song Han · MIT, USA</p><p>Structured vs. unstructured pruning and hardware-aware sparsity.</p></div>
         <div class="slot break"><div class="time">11:00 – 11:20</div><h4>Tea break</h4></div>
-        <div class="slot"><div class="time">11:20 – 13:00</div><h4>GPU &amp; kernel optimization</h4><p class="who">Invited engineer · GPU systems</p><p>CUDA execution model, memory coalescing, operator fusion, FlashAttention and writing a Triton kernel.</p></div>
+        <div class="slot"><div class="time">11:20 – 13:00</div><h4>Knowledge distillation &amp; low-rank methods</h4><p class="who">Prof. Ganesh Ramakrishnan · IIT Bombay</p><p>Distilling large models into deployable students; LoRA-style adapters at inference time.</p></div>
         <div class="slot break"><div class="time">13:00 – 14:00</div><h4>Lunch break <span class="tagchip">own arrangement</span></h4></div>
-        <div class="slot"><div class="time">14:00 – 17:30</div><h4>Lab 2 — Quantize &amp; accelerate <span class="tagchip lab">Hands-on</span></h4><p class="who">Lab leads &amp; teaching assistants</p><p>Quantize a transformer to INT8/INT4, fuse kernels, and benchmark the speed-up and accuracy delta on your A100 instance.</p></div>
-        <div class="slot"><div class="time">17:30 – 18:00</div><h4>Fireside chat: inference at industry scale <span class="tagchip key">Panel</span></h4><p>Practitioners on what breaks in production and how teams are organised around it.</p></div>
+        <div class="slot"><div class="time">14:00 – 17:30</div><h4>Lab 1 — quantize &amp; shrink <span class="tagchip lab">Hands-on</span></h4><p class="who">Lab leads &amp; teaching assistants</p><p>Quantize a transformer to INT8/INT4 and measure the speed-up and accuracy delta on your A100 instance.</p></div>
         <div class="slot break"><div class="time">18:00 – 19:00</div><h4>Optional evening clinic</h4></div>
       </div>
     </div>
@@ -90,19 +92,56 @@
     <!-- DAY 3 -->
     <div class="daypanel" id="day-3">
       <div class="timeline">
-        <div class="slot"><div class="time">09:00 – 10:30</div><h4>Serving systems &amp; dynamic batching</h4><p class="who">Prof. Purushottam Kulkarni</p><p>KV-cache management, continuous batching, Triton Inference Server, vLLM and Ray Serve architecture.</p></div>
-        <div class="slot"><div class="time">10:30 – 11:00</div><h4>Deploying LLMs at scale</h4><p class="who">Invited speaker · LLM serving</p><p>Paged attention, tensor &amp; pipeline parallelism, speculative decoding and cost-aware routing.</p></div>
+        <div class="slot"><div class="time">09:00 – 10:30</div><h4>The CUDA execution model <span class="tagchip key">Intl. faculty</span></h4><p class="who">Prof. Rio Yokota · Institute of Science Tokyo</p><p>Threads, warps, memory hierarchy and coalescing — what actually happens on the GPU.</p></div>
+        <div class="slot"><div class="time">10:30 – 11:00</div><h4>Operator fusion &amp; FlashAttention</h4><p class="who">Prof. Rio Yokota · Institute of Science Tokyo</p><p>Why fusion wins, and how FlashAttention reshapes the memory bottleneck.</p></div>
         <div class="slot break"><div class="time">11:00 – 11:20</div><h4>Tea break</h4></div>
-        <div class="slot"><div class="time">11:20 – 13:00</div><h4>Production, MLOps &amp; reliability</h4><p class="who">Invited engineer · MLOps</p><p>Observability, autoscaling, canary releases and drift detection for live inference services.</p></div>
+        <div class="slot"><div class="time">11:20 – 13:00</div><h4>Writing a Triton kernel</h4><p class="who">Invited engineer · GPU systems (USA)</p><p>From PyTorch op to a custom Triton kernel, with live benchmarking.</p></div>
         <div class="slot break"><div class="time">13:00 – 14:00</div><h4>Lunch break <span class="tagchip">own arrangement</span></h4></div>
-        <div class="slot"><div class="time">14:00 – 16:30</div><h4>Capstone — the inference leaderboard <span class="tagchip lab">Hands-on</span></h4><p class="who">All faculty &amp; teaching assistants</p><p>Teams optimise a shared model and compete on a live latency–throughput–cost leaderboard.</p></div>
-        <div class="slot"><div class="time">16:30 – 17:15</div><h4>Capstone presentations &amp; judging <span class="tagchip key">Showcase</span></h4><p>Top teams present their approach; judges score on the combined metric.</p></div>
-        <div class="slot"><div class="time">17:15 – 18:00</div><h4>Valedictory &amp; certificate distribution</h4><p class="who">Convener &amp; organising committee</p><p>Prizes, certificates and closing remarks.</p></div>
+        <div class="slot"><div class="time">14:00 – 17:30</div><h4>Lab 2 — fuse &amp; accelerate <span class="tagchip lab">Hands-on</span></h4><p class="who">Lab leads &amp; teaching assistants</p><p>Fuse kernels and apply FlashAttention to your model; profile the before/after on the cluster.</p></div>
+        <div class="slot break"><div class="time">18:00 – 19:00</div><h4>Optional evening clinic</h4></div>
+      </div>
+    </div>
+
+    <!-- DAY 4 -->
+    <div class="daypanel" id="day-4">
+      <div class="timeline">
+        <div class="slot"><div class="time">09:00 – 10:30</div><h4>Serving systems &amp; dynamic batching</h4><p class="who">Prof. Purushottam Kulkarni · IIT Bombay</p><p>KV-cache management, continuous batching, Triton Inference Server, vLLM and Ray Serve architecture.</p></div>
+        <div class="slot"><div class="time">10:30 – 11:00</div><h4>Autoscaling &amp; cost-aware routing</h4><p class="who">Prof. Umesh Bellur · IIT Bombay</p><p>Scaling replicas to traffic and routing requests to minimise cost per query.</p></div>
+        <div class="slot break"><div class="time">11:00 – 11:20</div><h4>Tea break</h4></div>
+        <div class="slot"><div class="time">11:20 – 13:00</div><h4>Fireside chat: inference at industry scale <span class="tagchip key">Panel</span></h4><p class="who">International faculty &amp; invited practitioners</p><p>What breaks in production, and how teams in Tokyo, the US and India are organised around it.</p></div>
+        <div class="slot break"><div class="time">13:00 – 14:00</div><h4>Lunch break <span class="tagchip">own arrangement</span></h4></div>
+        <div class="slot"><div class="time">14:00 – 17:30</div><h4>Lab 3 — build a serving stack <span class="tagchip lab">Hands-on</span></h4><p class="who">Lab leads &amp; teaching assistants</p><p>Stand up a batched, KV-cached inference service with vLLM behind an autoscaling endpoint.</p></div>
+        <div class="slot break"><div class="time">18:00 – 19:00</div><h4>Optional evening clinic</h4></div>
+      </div>
+    </div>
+
+    <!-- DAY 5 -->
+    <div class="daypanel" id="day-5">
+      <div class="timeline">
+        <div class="slot"><div class="time">09:00 – 10:30</div><h4>Deploying LLMs at scale <span class="tagchip key">Intl. faculty</span></h4><p class="who">Prof. Song Han · MIT, USA</p><p>Paged attention, tensor &amp; pipeline parallelism, and serving multi-billion-parameter models.</p></div>
+        <div class="slot"><div class="time">10:30 – 11:00</div><h4>Speculative &amp; parallel decoding</h4><p class="who">Prof. Rio Yokota · Institute of Science Tokyo</p><p>Speeding up generation with draft models and parallel decoding strategies.</p></div>
+        <div class="slot break"><div class="time">11:00 – 11:20</div><h4>Tea break</h4></div>
+        <div class="slot"><div class="time">11:20 – 13:00</div><h4>Production, MLOps &amp; reliability</h4><p class="who">Invited engineer · MLOps (USA)</p><p>Observability, canary releases and drift detection for live inference services.</p></div>
+        <div class="slot break"><div class="time">13:00 – 14:00</div><h4>Lunch break <span class="tagchip">own arrangement</span></h4></div>
+        <div class="slot"><div class="time">14:00 – 17:30</div><h4>Lab 4 — deploy &amp; harden an LLM endpoint <span class="tagchip lab">Hands-on</span></h4><p class="who">Lab leads &amp; teaching assistants</p><p>Serve an LLM with paged attention, add monitoring, and load-test it. Capstone teams &amp; brief announced.</p></div>
+        <div class="slot break"><div class="time">18:00 – 19:00</div><h4>Capstone kick-off &amp; clinic</h4></div>
+      </div>
+    </div>
+
+    <!-- DAY 6 -->
+    <div class="daypanel" id="day-6">
+      <div class="timeline">
+        <div class="slot"><div class="time">09:00 – 09:45</div><h4>Capstone briefing &amp; rules</h4><p class="who">All faculty &amp; teaching assistants</p><p>The shared model, the metric, and the leaderboard explained.</p></div>
+        <div class="slot"><div class="time">09:45 – 13:00</div><h4>Capstone — the inference leaderboard <span class="tagchip lab">Hands-on</span></h4><p class="who">Teams · mentored by faculty &amp; TAs</p><p>Teams optimise a shared model and compete on a live latency–throughput–cost leaderboard.</p></div>
+        <div class="slot break"><div class="time">13:00 – 14:00</div><h4>Lunch break <span class="tagchip">own arrangement</span></h4></div>
+        <div class="slot"><div class="time">14:00 – 15:30</div><h4>Final optimisation sprint <span class="tagchip lab">Hands-on</span></h4><p>Last push on the leaderboard before submissions close.</p></div>
+        <div class="slot"><div class="time">15:30 – 16:30</div><h4>Capstone presentations &amp; judging <span class="tagchip key">Showcase</span></h4><p class="who">International judging panel</p><p>Top teams present their approach; judges score on the combined metric.</p></div>
+        <div class="slot"><div class="time">16:30 – 17:30</div><h4>Valedictory, prizes &amp; certificates</h4><p class="who">Convener &amp; organising committee</p><p>Prizes, certificates and closing remarks. Group photograph.</p></div>
       </div>
     </div>
 
     <div class="callout mt-3">
-      <p><strong>Note:</strong> the schedule is indicative and may be adjusted. Speaker assignments for invited-industry sessions are confirmed closer to the event and announced by e-mail to registered participants.</p>
+      <p><strong>Note:</strong> the schedule is indicative and may be adjusted. International-faculty sessions may run partly over live video where travel requires; exact speaker assignments for invited-industry sessions are confirmed closer to the event and announced by e-mail to registered participants.</p>
     </div>
   </div>
 </section>
@@ -110,10 +149,10 @@
 <section class="section section--tight section--alt">
   <div class="container">
     <div class="cta-band">
-      <h2>Block your calendar: 22–24 June 2026</h2>
-      <p>Download the printable brochure to share the full schedule with your department, or register directly.</p>
+      <h2>Block six days: 21–26 June 2026</h2>
+      <p>Download the printable brochure to share the full schedule with your department, qualify through the quiz, or take a direct seat.</p>
       <div class="actions">
-        <a class="btn btn--primary btn--lg" href="registration.html">Register Now</a>
+        <a class="btn btn--primary btn--lg" href="registration.html">Register / Take the Quiz</a>
         <a class="btn btn--ghost btn--lg" href="brochure.html" target="_blank" rel="noopener">Download Brochure ↓</a>
       </div>
     </div>
@@ -123,14 +162,14 @@
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
-      <div><div class="footer-brand"><img src="assets/logo.svg" alt="MLIE 2026" /><div><strong>MLIE 2026</strong><span>Summer School on Machine Learning Inference Engineering</span></div></div><p style="max-width:34ch">Organised by C-MInDS &amp; the Department of Computer Science &amp; Engineering, IIT Bombay, under the Continuing Education Programme.</p></div>
+      <div><div class="footer-brand"><img src="assets/logo.svg" alt="MLIE 2026" /><div><strong>MLIE 2026</strong><span>International Workshop on Machine Learning Inference Engineering</span></div></div><p style="max-width:34ch">The inaugural India edition, organised by C-MInDS &amp; the Department of Computer Science &amp; Engineering, IIT Bombay, under the Continuing Education Programme.</p></div>
       <div><h4>Programme</h4><a href="about.html">About</a><a href="schedule.html">Schedule</a><a href="speakers.html">Speakers</a><a href="brochure.html">Brochure</a></div>
-      <div><h4>Participate</h4><a href="registration.html">Registration</a><a href="registration.html#fees">Fees</a><a href="venue.html">Venue &amp; Travel</a><a href="contact.html">Contact</a></div>
+      <div><h4>Participate</h4><a href="registration.html">Registration &amp; Quiz</a><a href="registration.html#fees">Fees</a><a href="venue.html">Venue &amp; Travel</a><a href="contact.html">Contact</a></div>
       <div><h4>Reach us</h4><a href="mailto:mlie2026@cse.iitb.ac.in">mlie2026@cse.iitb.ac.in</a><a href="tel:+912225767900">+91 22 2576 7900</a><span style="color:#9fb6cf;display:block;padding:.22rem 0">C-MInDS, 2nd Floor, KReSIT Building,<br>IIT Bombay, Powai, Mumbai 400076</span></div>
     </div>
     <div class="footer-bottom"><span>© <span id="yr">2026</span> Indian Institute of Technology Bombay · Continuing Education Programme</span><span><a href="#" style="display:inline">Privacy</a> · <a href="#" style="display:inline">Terms</a></span></div>
   </div>
-  <div class="footer-disclaimer">This website was created by students as an academic course project and is not an official IIT Bombay publication. Course details are illustrative.</div>
+  <div class="footer-disclaimer">This website was created by students as an academic course project and is not an official IIT Bombay publication. Speaker line-up, dates and course details are illustrative.</div>
 </footer>
 
 <script src="js/main.js"></script>
